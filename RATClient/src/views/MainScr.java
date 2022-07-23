@@ -36,6 +36,8 @@ public class MainScr extends javax.swing.JFrame {
         ConnectBtn = new javax.swing.JButton();
         ShutDownBtn = new javax.swing.JButton();
         ScreenBtn = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +69,10 @@ public class MainScr extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("jButton1");
+
+        jButton2.setText("Exit");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -83,7 +89,13 @@ public class MainScr extends javax.swing.JFrame {
                         .addComponent(ShutDownBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ScreenBtn)
+                        .addGap(59, 59, 59)
+                        .addComponent(jButton1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -95,8 +107,11 @@ public class MainScr extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ShutDownBtn)
-                    .addComponent(ScreenBtn))
-                .addContainerGap(244, Short.MAX_VALUE))
+                    .addComponent(ScreenBtn)
+                    .addComponent(jButton1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 216, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addContainerGap())
         );
 
         pack();
@@ -196,6 +211,8 @@ public class MainScr extends javax.swing.JFrame {
     private javax.swing.JButton ConnectBtn;
     private javax.swing.JButton ScreenBtn;
     private javax.swing.JButton ShutDownBtn;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JTextField txtIP;
     // End of variables declaration//GEN-END:variables
 }
