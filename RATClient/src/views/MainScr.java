@@ -35,7 +35,7 @@ public class MainScr extends javax.swing.JFrame {
         txtIP = new javax.swing.JTextField();
         ConnectBtn = new javax.swing.JButton();
         ShutDownBtn = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        ScreenBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,10 +60,10 @@ public class MainScr extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ScreenBtn.setText("Screens Shot");
+        ScreenBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ScreenBtnActionPerformed(evt);
             }
         });
 
@@ -82,7 +82,7 @@ public class MainScr extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(ShutDownBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
+                        .addComponent(ScreenBtn)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -95,7 +95,7 @@ public class MainScr extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ShutDownBtn)
-                    .addComponent(jButton1))
+                    .addComponent(ScreenBtn))
                 .addContainerGap(244, Short.MAX_VALUE))
         );
 
@@ -150,11 +150,11 @@ public class MainScr extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ConnectBtnActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void ScreenBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ScreenBtnActionPerformed
         // TODO add your handling code here:
-        TestFrame t = new TestFrame();
+        ScreenShot t = new ScreenShot();
         t.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_ScreenBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,8 +193,8 @@ public class MainScr extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ConnectBtn;
+    private javax.swing.JButton ScreenBtn;
     private javax.swing.JButton ShutDownBtn;
-    private javax.swing.JButton jButton1;
     private javax.swing.JTextField txtIP;
     // End of variables declaration//GEN-END:variables
 }
