@@ -152,8 +152,9 @@ public class MainScr extends javax.swing.JFrame {
 
     private void ScreenBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ScreenBtnActionPerformed
         // TODO add your handling code here:
-        ScreenShot t = new ScreenShot();
+        Screen t = new Screen();
         t.setVisible(true);
+        MainScr.this.setVisible(false);
     }//GEN-LAST:event_ScreenBtnActionPerformed
 
     /**
