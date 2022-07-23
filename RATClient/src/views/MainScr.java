@@ -1,4 +1,3 @@
-//Hello Hùng
 package views;
 
 import controllers.RATClientCtr;
