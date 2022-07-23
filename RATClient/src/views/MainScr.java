@@ -1,3 +1,4 @@
+//Hello Hùng, testing 1 2 3 4 alo alo
 package views;
 
 import controllers.RATClientCtr;
